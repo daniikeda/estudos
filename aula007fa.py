@@ -1,3 +1,4 @@
+# O objetivo do exercício é simplificar o código para a obtenção de tabuadas
 n=int(input('Digite o número que deseja obter a tabuada:'))
 print('A tabuada de {} é:'.format(n))
 print('{} x {} = {:2}'.format(n, 1, n*1))
