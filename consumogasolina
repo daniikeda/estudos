@@ -1,0 +1,12 @@
+#código pensando na necessidade específica para cálculo do usuário que tem deslocamento de carro em dias específicos
+dis1=float(input('Quilômetros na segunda feira:'))
+dis2=float(input('Quilômetros na terça-feira:'))
+dis3=float(input('Quilômetros na quinta-feira:'))
+kmsem=dis1+dis2+dis3
+kmmes=kmsem*4.5
+print ('Você roda {:.0f}Km por semana, o que equivale a {:.0f}km por mês'.format(kmsem, kmmes))
+consumo=int(input('Quantos Km por litro seu carro faz?'))
+litrov=float(input('Qual o valor do litro de gasolina? R$'))
+rendimento=kmmes/consumo
+gasto=rendimento*litrov
+print('Você gasta R${:.2f} por mês de gasolina!'.format(gasto))
