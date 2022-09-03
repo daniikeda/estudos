@@ -1,0 +1,21 @@
+from datetime import date
+print ('Sistema de consulta de alistamento Militar')
+ano = int(input ('Digite o ano em que nasceu: '))
+genero= int(input('''Qual seu gênero?
+[1] Feminino
+[2] Masculino
+Sua opção:'''))
+atual= date.today().year
+idade= atual - ano
+resta=atual-ano
+falta= resta+atual
+print('Quem nasceu em {} tem {} anos em {}'.format(ano, idade, atual))
+if genero == 1:
+   print ('Por ser mulher o seu alistamento não é obrigatório no Brasil!')
+elif idade < 18:
+    print ('Você ainda não está na idade de se alistar')
+    print ('Falta {} anos para você se apresentar, isso ocorrerá em {}'.format(resta,falta))
+elif idade == 18:
+    print ('Você está na idade correta! Procure um posto de alistamento IMEDIATAMENTE!')
+else:
+    print ('Você deveria ter se alistado em {}, procure um dos postos e regularize sua situação!'.format(ano+18))
